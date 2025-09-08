@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, Stack, Title, Divider, Container,Text} from "@mantine/core";
 // import { v4 as uuidv4 } from "uuid";
-// import ModalRegister from "../components/Modal";
+import ModalRegister from "../components/Modal";
 
 type Expense = {
   id: string;
@@ -67,7 +67,7 @@ export default function ExpenseTracker() {
         Expense Tracker
       </Title>
       <Button onClick={handleAdd}>Add Expense Item</Button>
-      {/* {opened && <ModalRegister opened = {opened} onClose={close} onAdd={onAdd}></ModalRegister>} */}
+      {/* {opened && <ModalRegister opened = {opened} onClose={close} onAdd={handleAdd()}></ModalRegister>} */}
 
       <Divider my="md" />
       {/* Type additional total cost here. */}
