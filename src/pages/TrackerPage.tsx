@@ -1,7 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Button, Stack, Title, Divider, Container,Text} from "@mantine/core";
 // import { v4 as uuidv4 } from "uuid";
-import ModalRegister from "../components/Modal";
+// import ModalRegister from "../components/Modal";
 
 type Expense = {
   id: string;
@@ -11,13 +11,14 @@ type Expense = {
 };
 
 export default function ExpenseTracker() {
-  const [opened, setOpened] = useState(false);
-  const [expenses, setExpenses] = useState<Expense[]>([]);
+  // const [opened, setOpened] = useState(false);
+  // const [expenses, setExpenses] = useState<Expense[]>([]);
+  const expenses:Expense[] = []
   //const categories = ["Food", "Transport", "Entertainment"];
 
-  const handleAdd = () =>{
-    setOpened(true);
-  };
+  // const handleAdd = () =>{
+  //   setOpened(true);
+  // };
 
   // const deletExpense = (exId: string) =>{
   //   setExpenses((prev)=> prev.filter((expenses)=> expenses.id !== exId));
@@ -66,7 +67,7 @@ export default function ExpenseTracker() {
       <Title order={2} mb="md">
         Expense Tracker
       </Title>
-      <Button onClick={handleAdd}>Add Expense Item</Button>
+      <Button>Add Expense Item</Button>
       {/* {opened && <ModalRegister opened = {opened} onClose={close} onAdd={handleAdd()}></ModalRegister>} */}
 
       <Divider my="md" />
